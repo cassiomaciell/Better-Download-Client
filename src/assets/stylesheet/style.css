@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+	overflow: hidden;
+}
+
+body,
+html,
+.main {
+	background-color: #17171b;
+	margin: 0;
+}
+
+.bdl-form {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.3rem;
+	justify-content: center;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 500px;
+}
+
+.bdl-form a {
+	-webkit-user-select: none;
+	background-color: #fff;
+	cursor: pointer;
+	font-family: "Nunito", sans-serif;
+	user-select: none;
+}
+
+.bdl-form input {
+	background-color: transparent;
+	color: #00a2ff;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.bdl-form a {
+	background-color: #00ccff;
+	border: 2px solid #00a2ff;
+	color: #17171b;
+	font-size: 1.3rem;
+	margin: 6px 0;
+	border-radius: 4px;
+}
+.bdl-form a:active {
+	background-color: #00aeff;
+	border: 2px solid #2cb1ff;
+}
+
+.bdl-form input {
+	border: none;
+	border-bottom: 2px solid #00ccff;
+	background-color: rgba(0, 0, 0, 0.072);
+	font-size: 1.3rem;
+	margin-top: 6px;
+	margin-bottom: 8px;
+}
+
+.bdl-form input::placeholder {
+	color: rgba(0, 162, 255, 0.267);
+	user-select: none;
+}
+
+.bdl-form input:focus {
+	outline: none;
+}
+
+.bdl-form input[type="number"]::-webkit-inner-spin-button,
+.bdl-form input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.bdl-form label {
+	font-family: "Nunito", sans-serif;
+	color: #fff;
+	font-size: 1.1rem;
+	text-transform: capitalize;
+	user-select: none;
+}
+
+.container,
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+
+.main,
+.container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.progress-bar {
+	width: 100%;
+	margin-top: 5px;
+}
+
+.progress-bar #progress {
+	background-color: green;
+	height: 100%;
+	width: 0;
+	color: #17171b;
+	line-height: 100%;
+}
+
+.progress-bar .bar {
+	background-color: rgba(0, 0, 0, 0.397);
+	border: 2px solid #00ccff;
+	border-radius: 4px;
+	height: 25px;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.title-bar {
+	-webkit-app-region: drag;
+	-webkit-user-select: none;
+	background-color: rgba(0, 0, 0, 0.158);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.title-bar .title {
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 29px;
+	margin-left: 10px;
+}
+
+.title-bar-controls {
+	display: flex;
+	flex-direction: row-reverse;
+	padding-right: 10px;
+	padding-top: 5px;
+	user-select: none;
+}
+
+.title-bar-controls .title-bar-button {
+	-webkit-app-region: none;
+	padding: 0 3px;
+}
+
+.title-bar-controls .title-bar-button img {
+	cursor: pointer;
+	filter: brightness(10) invert(1) grayscale(50%);
+	height: 20px;
+	width: 20px;
+}

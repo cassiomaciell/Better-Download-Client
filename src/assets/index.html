@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Better Download</title>
+		<link rel="stylesheet" href="stylesheet/style.css" />
+	</head>
+	<body>
+        <div class="title-bar">
+            <div class="title">Better Downloader</div class="title">
+            <div class="title-bar-controls">
+                <div class="title-bar-button" id="btn-close">
+                    <img src="images/close.png" />
+                </div>
+                <div class="title-bar-button" id="btn-minimize">
+                    <img src="images/minimize.png" />
+                </div>
+            </div>
+        </div>
+		<div class="container">
+			<div class="main">
+				<div class="bdl-form">
+					<label for="url-input">Direct link</label>
+					<input type="url" name="url-input" id="url-input" placeholder="https://cdn.example.com/helloworld.zip" />
+					<label for="threads">Threads</label>
+					<input type="number" name="threads" id="threads-input" value="2" placeholder="2" min="1" step="1" />
+					<label for="output-dir-input">Output dir</label>
+					<input type="text" name="output-dir-input" id="output-dir-input" value="" />
+					<label for="file-name-input">File name</label>
+					<input type="text" name="file-name-input" id="file-name-input" value="" />
+					<a id="download-button">Download</a>
+					<div class="progress-bar">
+						<div class="bar"><div id="progress">10%</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/index.js"></script>
+	</body>
+</html>
